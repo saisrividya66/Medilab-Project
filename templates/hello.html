@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+
+</load><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" >
+    <script src="{% static 'js/main.js' %}"></script>
+
+</head>
+<body>
+   <h1>Templates as Response</h1> 
+   <h4>I LOVE YOU</h4>
+   {% comment %}
+   {% if x > y %}
+   <p>{{x}} is greater</p>
+   {% else %}
+   <p>{{y}} is greater</p>
+   {% endif %}
+
+   <p>list is : {{l}} </p>
+   {% for i in l %}
+        {{i}}<br>
+   {% endfor %}
+  {{products}}<br>
+  {% for x in products %}
+     <strong>id:</strong>{{forloop.counter}}<br>
+     <strong>Name:</strong>{{x.name}}<br>
+     
+  {% endfor %}
+  {% endcomment %}
+  <button onclick="greet()">Click Me</button><br>
+  <img src="{% static 'images/viddhu.jpg' %}" alt="vidya" width="100px" height="100px">
+</body>
+</html>                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<
+
